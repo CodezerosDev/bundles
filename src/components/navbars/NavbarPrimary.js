@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Collapse,
   NavbarBrand,
@@ -17,9 +17,23 @@ import logo from "assets/img/logo.png";
 function NavbarPrimary() {
   const [collapseOpen, toggleCollapseOpen] = React.useState(false);
   const location = useLocation();
-  console.log(location);
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  });
   return (
     <>
+      {scroll && (
+        <div
+          id="scrolltop"
+          className="scrolltop"
+          onClick={() => window.scroll(0, 0)}
+        >
+          <i class="fas fa-arrow-circle-up"></i>
+        </div>
+      )}
       <Navbar className="navbar-transparent" expand="lg">
         <Container>
           <NavbarBrand href="/">
@@ -65,7 +79,7 @@ function NavbarPrimary() {
                   className={
                     location.hash === "#PredictionPools" ? "active" : ""
                   }
-                  // onClick={() => ScrollHandler("PredictionPools")}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   Prediction Pools
                 </NavLink>
@@ -74,7 +88,7 @@ function NavbarPrimary() {
                 <NavLink
                   href="#Staking"
                   className={location.hash === "#Staking" ? "active" : ""}
-                  //onClick={(e) => e.preventDefault()}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   Staking
                 </NavLink>
@@ -85,7 +99,7 @@ function NavbarPrimary() {
                   className={
                     location.hash === "#NFTMarketplace" ? "active" : ""
                   }
-                  // onClick={(e) => e.preventDefault()}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   NFT Marketplace
                 </NavLink>
@@ -95,7 +109,7 @@ function NavbarPrimary() {
                 <NavLink
                   href="#Roadmap"
                   className={location.hash === "#Roadmap" ? "active" : ""}
-                  // onClick={(e) => e.preventDefault()}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   Roadmap
                 </NavLink>
@@ -105,7 +119,7 @@ function NavbarPrimary() {
                 <NavLink
                   href="#Tokenomics"
                   className={location.hash === "#Tokenomics" ? "active" : ""}
-                  //onClick={(e) => e.preventDefault()}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   Tokenomics
                 </NavLink>
@@ -115,7 +129,7 @@ function NavbarPrimary() {
                 <NavLink
                   href="#Team"
                   className={location.hash === "#Team" ? "active" : ""}
-                  //onClick={(e) => e.preventDefault()}
+                  onClick={() => toggleCollapseOpen(false)}
                 >
                   Team
                 </NavLink>

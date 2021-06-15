@@ -17,7 +17,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 function Post3() {
   return (
     <>
-      <div className="project-2 my-5" id="PredictionPools">
+      <div className="project-2 py-5" id="PredictionPools">
         <Container>
           <ScrollAnimation animateIn="fadeInLeft" animateOnce>
             <Row>

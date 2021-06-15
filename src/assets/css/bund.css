@@ -17777,7 +17777,7 @@ textarea[resize="horizontal"] {
   .navbar-collapse.show {
     padding: 1.5rem;
     border-radius: 0.25rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 50px 100px rgba(50, 50, 93), 0 15px 35px rgb(0, 0, 0),
       0 5px 15px rgba(0, 0, 0);
     animation: show-navbar-collapse 0.2s ease forwards;
@@ -29460,6 +29460,27 @@ td.rdtYear:hover {
   margin-top: -7px;
   border-width: 7px 7px 7px 0;
 }
+/*---------------15-6-2021----------------*/
+#scrolltop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#scrolltop:hover {
+  opacity: 1;
+}
+i.fas.fa-arrow-circle-up {
+  color: #1380ab;
+  font-size: 30px;
+}
+@media screen and (max-width: 991px) {
+  .navbar-collapse .navbar-toggler span {
+    background: #ffffff;
+  }
+}
 @media screen and (max-width: 767px) {
   .our-clients {
     text-align: center;
@@ -29476,7 +29497,14 @@ td.rdtYear:hover {
 html {
   scroll-behavior: smooth;
 }
-.navbar-transparent .navbar-nav .nav-link.active{
+.navbar-transparent .navbar-nav .nav-link.active {
   color: #1380ab !important;
+}
+.navbar-transparent {
+  transition: all 0.2s ease-in-out;
+}
+.fixed_header {
+  background: #212529 !important;
+  position: fixed;
 }
 /*# sourceMappingURL=argon-design-system.css.map */
