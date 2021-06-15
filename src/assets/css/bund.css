@@ -29497,14 +29497,14 @@ i.fas.fa-arrow-circle-up {
 html {
   scroll-behavior: smooth;
 }
-.navbar-transparent .navbar-nav .nav-link.active {
+/* .navbar-transparent .navbar-nav .nav-link.active {
   color: #1380ab !important;
-}
+} 
 .navbar-transparent {
   transition: all 0.2s ease-in-out;
 }
 .fixed_header {
   background: #212529 !important;
   position: fixed;
-}
+} */
 /*# sourceMappingURL=argon-design-system.css.map */
