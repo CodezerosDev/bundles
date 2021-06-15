@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Collapse,
   NavbarBrand,
@@ -11,43 +10,41 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import logo from 'assets/img/logo.png';
-
+import { Link, useLocation } from "react-router-dom";
+import logo from "assets/img/logo.png";
 // Core Components
 
 function NavbarPrimary() {
   const [collapseOpen, toggleCollapseOpen] = React.useState(false);
+  const location = useLocation();
+  console.log(location);
   return (
     <>
       <Navbar className="navbar-transparent" expand="lg">
         <Container>
-          <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>            
-          <img
-          width="auto"
-          height="auto"
-          src={logo}
-/>
-           
-
+          <NavbarBrand href="/">
+            <img width="auto" height="auto" alt="logo" src={logo} />
           </NavbarBrand>
-          <h5 className="text-primary"> BUNDLES<span className="text-white">FINANCE</span></h5>
+          <h5 className="text-primary">
+            {" "}
+            BUNDLES<span className="text-white">FINANCE</span>
+          </h5>
           <button
             className="navbar-toggler"
             onClick={() => toggleCollapseOpen(!collapseOpen)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Collapse isOpen={collapseOpen} navbar>
+          <Collapse
+            isOpen={collapseOpen}
+            navbar
+            className="justify-content-end"
+          >
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <Link to="/index">
-                    <img
-                      
-                      alt="..."
-                      src={require("assets/img/logo.png")}
-
-                    ></img>
+                  <Link to="/">
+                    <img alt="..." src={require("assets/img/logo.png")} />
                   </Link>
                 </Col>
                 <Col className="collapse-close" xs="6">
@@ -62,59 +59,67 @@ function NavbarPrimary() {
               </Row>
             </div>
             <Nav className="ml-lg-auto" navbar>
-
               <NavItem>
-
-              </NavItem>
-              <NavItem>
-                <NavLink>
-
-                </NavLink>
-
-                </NavItem>
-                <NavItem>
-                <NavItem>
-
-                </NavItem>
-                </NavItem>
-            <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Prediction Pools <span className="sr-only">(current)</span>
+                <NavLink
+                  href="#PredictionPools"
+                  className={
+                    location.hash === "#PredictionPools" ? "active" : ""
+                  }
+                  // onClick={() => ScrollHandler("PredictionPools")}
+                >
+                  Prediction Pools
                 </NavLink>
               </NavItem>
-
               <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  NFT Marketplace <span className="sr-only">(current)</span>
+                <NavLink
+                  href="#Staking"
+                  className={location.hash === "#Staking" ? "active" : ""}
+                  //onClick={(e) => e.preventDefault()}
+                >
+                  Staking
                 </NavLink>
               </NavItem>
-
               <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Staking <span className="sr-only">(current)</span>
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Roadmap <span className="sr-only">(current)</span>
+                <NavLink
+                  href="#NFTMarketplace"
+                  className={
+                    location.hash === "#NFTMarketplace" ? "active" : ""
+                  }
+                  // onClick={(e) => e.preventDefault()}
+                >
+                  NFT Marketplace
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Tokenomics <span className="sr-only">(current)</span>
+                <NavLink
+                  href="#Roadmap"
+                  className={location.hash === "#Roadmap" ? "active" : ""}
+                  // onClick={(e) => e.preventDefault()}
+                >
+                  Roadmap
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="#Team7" onClick={(e) => e.preventDefault()}>
-                  Team <span className="sr-only">(current)</span>
+                <NavLink
+                  href="#Tokenomics"
+                  className={location.hash === "#Tokenomics" ? "active" : ""}
+                  //onClick={(e) => e.preventDefault()}
+                >
+                  Tokenomics
                 </NavLink>
               </NavItem>
 
-
-           
+              <NavItem>
+                <NavLink
+                  href="#Team"
+                  className={location.hash === "#Team" ? "active" : ""}
+                  //onClick={(e) => e.preventDefault()}
+                >
+                  Team
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>

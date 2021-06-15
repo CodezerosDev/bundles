@@ -1,20 +1,12 @@
 import React from "react";
-import {
-  Button,
-
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-
+import { Button, Container, Row, Col } from "reactstrap";
 
 function Header() {
   return (
     <>
-    
-    <header className="header-4 ">
+      <header className="header-4 ">
         <div className="header-wrapper">
-        <div className="page-header header-video">
+          <div className="page-header header-video">
             <div className=""></div>
             <video
               autoPlay="autoPlay"
@@ -27,56 +19,52 @@ function Header() {
                 type="video/mp4"
               ></source>
             </video>
-            
-            <Container className="text-center">
 
+            <Container className="text-center">
               <Row>
                 <Col className="mx-auto" lg="7">
-       {/*           <h4 className="video-text">bundles finance</h4>   */}
-                  <h1 className="display-3 text-white">Use crypto-prediction skills</h1>
-                 <h1 className="text-primary"> Earn APY. </h1>
-                 <div className="space-100"></div>
+                  {/*           <h4 className="video-text">bundles finance</h4>   */}
+                  <h1 className="display-3 text-white">
+                    Use crypto-prediction skills
+                  </h1>
+                  <h1 className="text-primary"> Earn APY. </h1>
+                  <div className="space-100"></div>
                   <Button
                     outline
                     className="btn-round mt-3 mb-sm-0 pulse"
                     color="primary"
-                    href="/low-risk"
+                    href="https://bundles.finance/index"
                   >
-                    <span className="btn-inner--icon">
-                    </span>
-                    
-                    <span className="btn-inner--text">Launch App</span>
+                    <span className="btn-inner--icon"></span>
 
-                    
+                    <span className="btn-inner--text">Launch App ETH</span>
                   </Button>
                   <Button
                     outline
                     className="btn-round mt-3 mb-sm-0 pulse"
                     color="primary"
-                    href="/low-risk"
+                    href="https://bundles.finance/rsk-index "
                   >
-                    <span className="btn-inner--icon">
-                    </span>
-                    
+                    <span className="btn-inner--icon"></span>
+
+                    <span className="btn-inner--text">Launch App RSK</span>
+                  </Button>
+                  <Button
+                    outline
+                    className="btn-round mt-3 mb-sm-0 pulse"
+                    color="primary"
+                    href="https://bundles.finance/NFT/marketplace"
+                  >
+                    <span className="btn-inner--icon"></span>
+
                     <span className="btn-inner--text">Marketplace</span>
-
-                    
                   </Button>
-                 
                 </Col>
-                
               </Row>
-
-
-  
             </Container>
           </div>
-          </div>
-          </header>
-        
-
-    
-   
+        </div>
+      </header>
     </>
   );
 }
