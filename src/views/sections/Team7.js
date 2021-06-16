@@ -55,19 +55,22 @@ function Team7() {
                       </div>
                     </div>
                     <div className="card-profile-stats d-flex justify-content-center">
-                      <div>
+                      {/* <div>
                         <span className="heading"></span>
                         <span className="description">
                           <i className="fab fa-twitter"></i>
                         </span>
-                      </div>
+                      </div> */}
 
-                      <div>
+                      <a
+                        href="https://www.linkedin.com/in/simon-lewis-89674b21"
+                        target="_blank"
+                      >
                         <span className="heading"></span>
                         <span className="description">
                           <i className="fab fa-linkedin"></i>
                         </span>
-                      </div>
+                      </a>
                     </div>
                   </CardBody>
                 </Card>
@@ -107,19 +110,22 @@ function Team7() {
                       </div>
                     </div>
                     <div className="card-profile-stats d-flex justify-content-center">
-                      <div>
+                      {/* <div>
                         <span className="heading"></span>
                         <span className="description">
                           <i className="fab fa-twitter"></i>
                         </span>
-                      </div>
+                      </div> */}
 
-                      <div>
+                      <a
+                        href="https://www.linkedin.com/in/sidbouziane"
+                        target="_blank"
+                      >
                         <span className="heading"></span>
                         <span className="description">
                           <i className="fab fa-linkedin"></i>
                         </span>
-                      </div>
+                      </a>
                     </div>
                   </CardBody>
                 </Card>
@@ -156,7 +162,7 @@ function Team7() {
                         relation operations.
                       </div>
                     </div>
-                    <div className="card-profile-stats d-flex justify-content-center">
+                    {/* <div className="card-profile-stats d-flex justify-content-center">
                       <div>
                         <span className="heading"></span>
                         <span className="description">
@@ -175,7 +181,7 @@ function Team7() {
                           <i className="fab fa-linkedin"></i>
                         </span>
                       </div>
-                    </div>
+                    </div> */}
                   </CardBody>
                 </Card>
               </Col>
@@ -212,7 +218,7 @@ function Team7() {
                         Community since than.
                       </div>
                     </div>
-                    <div className="card-profile-stats d-flex justify-content-center">
+                    {/* <div className="card-profile-stats d-flex justify-content-center">
                       <div>
                         <span className="heading"></span>
                         <span className="description">
@@ -232,7 +238,7 @@ function Team7() {
                           <i className="fab fa-linkedin"></i>
                         </span>
                       </div>
-                    </div>
+                    </div> */}
                   </CardBody>
                 </Card>
               </Col>

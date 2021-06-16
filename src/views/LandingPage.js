@@ -11,43 +11,33 @@ import Feature0 from "./sections/Feature0.js";
 import Team7 from "./sections/Team7.js";
 import Pricing from "./sections/Pricing.js";
 import Footer4 from "./sections/Footer4.js";
-import { Element } from 'react-scroll'
-
-
+// import { Element } from 'react-scroll'
 
 export default function LandingPage() {
-
-
   return (
     <>
-
-    <div className="wrapper">
- 
+      <div className="wrapper">
         <NavbarPrimary />
-       <Header />
+        <Header />
         <Header5 />
-       {/*  <Header /> */}
+        {/*  <Header /> */}
         <div className="main">
-        <Post3 />
-        <div className="space-100"></div>
-        <Feature1 />
-        <Header6 />
-        <Team5  />
-        <Roadmap />
+          <Post3 />
+          <div className="space-100"></div>
+          <Feature1 />
+          <Header6 />
+          <Team5 />
+          <Roadmap />
 
-      <Feature0 />
-      <div className="space-100"></div>
-      <Team7 />
-        <div className="space-100"></div>
-        <Pricing />
+          <Feature0 />
+          <div className="space-100"></div>
+          <Team7 />
+          <div className="space-100"></div>
+          <Pricing />
 
-        <Footer4 id="Footer"/>
-        
-
+          <Footer4 id="Footer" />
         </div>
-        </div>
-
-  
+      </div>
     </>
   );
 }

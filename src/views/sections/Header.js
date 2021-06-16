@@ -33,7 +33,7 @@ function Header() {
                     outline
                     className="btn-round mt-3 mb-sm-0 pulse"
                     color="primary"
-                    href="https://bundles.finance/index"
+                    href="https://app.bundles.finance/index"
                   >
                     <span className="btn-inner--icon"></span>
 
@@ -43,7 +43,7 @@ function Header() {
                     outline
                     className="btn-round mt-3 mb-sm-0 pulse"
                     color="primary"
-                    href="https://bundles.finance/rsk-index "
+                    href="https://app.bundles.finance/rsk-index "
                   >
                     <span className="btn-inner--icon"></span>
 
@@ -53,7 +53,7 @@ function Header() {
                     outline
                     className="btn-round mt-3 mb-sm-0 pulse"
                     color="primary"
-                    href="https://bundles.finance/NFT/marketplace"
+                    href="https://app.bundles.finance/NFT/marketplace"
                   >
                     <span className="btn-inner--icon"></span>
 

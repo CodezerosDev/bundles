@@ -32,7 +32,7 @@ function Header6() {
                       block
                       color="primary"
                       type="submit"
-                      href="https://bundles.finance/NFT/marketplace "
+                      href="https://app.bundles.finance/NFT/marketplace "
                     >
                       Visit NFT Marketplace
                     </Button>

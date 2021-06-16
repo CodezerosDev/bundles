@@ -30,7 +30,7 @@ function Header5() {
                         block
                         color="primary"
                         type="submit"
-                        href="https://bundles.finance/index"
+                        href="https://app.bundles.finance/index"
                       >
                         Launch App ETH
                         <img
@@ -46,7 +46,7 @@ function Header5() {
                         block
                         color="primary"
                         type="submit"
-                        href="https://bundles.finance/rsk-index "
+                        href="https://app.bundles.finance/rsk-index "
                       >
                         Launch App RSK
                         <img
